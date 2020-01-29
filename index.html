@@ -1,50 +1,704 @@
 <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RDM @ Eawag -  some aspects -</title>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"> -->
+  <link rel="stylesheet" href="css/reveal.css"/>
+  <link rel="stylesheet" href="css/theme/white.css"/>
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css"/>
+  <!-- Eawag style-sheet -->
+  <link rel="stylesheet" href="css/theme/eawag.css"/>
+</head>
 
-		<title>reveal.js</title>
+<body>
+<div class="reveal">
+<div class="slides">
+  <img class="logo" id="logo"  src="assets/logo_rdm.svg"/>
+  
+  <!-- Title -->
+  <section data-background="assets/eawag_vorlage_blau_background.png" data-state="title">
+    <div class="full">
+      <div class="maintitle_l1">
+	<span class="alert">T</span>actical <span class="alert">Tech</span> Sho<span class="alert">w</span>
+      </div>
+      <div class="maintitle_l2">
+	&mdash; tools, technologies, concepts &mdash; 
+      </div>
+      <div style="margin-top:600px;">Research <span class="alert">Data</span>
+      &amp; <span class="alert">Software</span> Training Series &mdash; 2020-01-30</div>
+      
+      <!-- <div class="pdfdownload"> -->
+      <!-- 	<a href="pdf/output.pdf"> -->
+      <!-- 	  <img class="titlepageicon" src="assets/pdf.svg" alt="pdf-download" /> -->
+      <!-- 	  <span class="pdfdltext">download<br>PDF (869 kB)</span> -->
+      <!-- 	</a> -->
+      <!-- </div> -->
+      <div class="license">
+      <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">
+	<img class="titlepageicon" alt="CC0" src="assets/CC0_button.svg" />
+      </a>
+      </div>
+      
+      <div class="authordate">
+	<p>
+	Harald von Waldow &lt;harald.vonwaldow@eawag.ch&gt;<br />
+	Michael Köbberich  &lt;michael.koebberich@eawag.ch&gt;
+	</p>
+      </div>
+    </div>
+  </section>
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+  <section>
+    <div style="float:right;width:50%;text-align:center;margin-top:0px;">
+      <h3>Feedback</h3>
+    </div>
+    <p style="clear:both;">&nbsp;</p>
+    <div>
+      Point your device to <mark>https://pollev.com/actionlake240</mark></li>
+    </div>
+    <div style="float:left;margin-top:1ex;">
+      <img class="rawimg" width="500px" src="assets/pollev_qr.svg" />
+    </div>
+    <div style="margin-top:2ex;">
+      <ul class="condensed">
+	<li>Agree to cookies</li>
+	<li>If asked for login: "skip"</li>
+	<li>Answer first question:<br /> Empa or Eawag?</li>
+      </ul>
+    </div>
+  </section>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+  <!-- QUESTION: Which Institution -->
+  <section data-state="pollev"
+	   data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/UNhLblvpDfvxJm5K06iD1?preview=true&controls=none"></section>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+  <!-- Programming & Scripting -->
+  <section> 
+    <section>
+      <div><!-- style="float:right;width:50%;text-align:center;margin-top:-150px;" -->
+	<h3>Scripting &amp; <span class="alert">Programming</span></h3>
+      </div>
+    </section>
+    <section data-state="pollev"
+	     data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/TIKVVHVGElrZOQuWpSjcW?preview=true&controls=none"></section>
+    
+    <section> <!-- Python, R , Julia: Which one? -->
+      <div style="float:right;width:50%;text-align:left;margin-top:-20px;">
+	<h3><span class="alert">R</span>, <span class="alert">Py</span>thon and <span class="alert">Julia</span><br />Which one?</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div>
+        <dl>
+          <dt><span class="alert">R</span></dt><dd>statistics, data
+          wrangling, non-NN related ML, visualization, high quality
+          packages, "friendly" ecosystem</dd>
+          <dt><span class="alert">Python</span></dt><dd>data
+          wrangling, visualization, NN related ML, beginner-friendly,
+          extremely versatile</dd>
+	  <dt><span class="alert">Julia</span></dt><dd>very fast, own
+	  simulation codes, matrix algera, numerical solvers,
+	  differential equations <i>(h/t Andreas)</i></dd>
+	</dl>
+      </div>
+      <div style="margin-top:1em;">
+	<strong>What is <span class="alert">everybody</span> else in
+	your lab and in your field <span class="alert">using</span>?</strong>
+      </div>
+    </section>
 
-		<script src="js/reveal.js"></script>
+    <section> <!-- Python2 vs Python3 -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-200px;">
+	<h3><span class="alert">Py</span>thon</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div>
+	<h4>Python <span class="alert">2</span> versus Python <span class="alert">3</span></h4>
+        <ul>
+	  <li><b>Incompatible!</b>
+	  <li> ... but lots of help to port from 2 to 3</li>
+	  <li>Use <mark>Python 3</mark> unless you need legacy packages</li>
+	</ul>
+      </div>
+    </section>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				hash: true,
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/highlight/highlight.js' },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-		</script>
-	</body>
+    <!-- DEMO Py2 vs. Py 3 features. Division -->
+     <section> <!-- Python packages you need -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-80px;">
+	<h3><span class="alert">Py</span>thon</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div>
+	<h4>Python <span class="alert">packages</span> you need to <span class="alert">learn</span></h4>
+	<dl>
+	  <dt>numpy</dt><dd>Fundamental package for scientific computing: matrices (arrays), linear algebra</dd>
+	  <dt>pandas</dt><dd>Fundametal package for data analysis: <i>Data Frame</i> (similar to R) and <i>Time Series</i>. Data sorting & preparing.</dd>
+	  <dt>plotnine</dt><dd>Recommended for visualization. A clone of R's <i>ggplot2</i>. Traditional alternative: <i>Matplotlib</i>/<i>Seaborn</i>.</dd>
+	</dl>
+      </div>
+    </section>
+
+    <section> <!-- Python for ML / AI -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-20px;">
+	<h3><span class="alert">Py</span>thon</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-50px">
+	<h4>Python <span class="alert">packages</span> for ML / AI</h4>
+	<p>Python is "<mark>industry-standard</mark>" when it comes to ANN, CNN, RNN, GAN, ..., "<mark>deep-</mark>anything".</p>
+	<dl>
+	  <dt>scikit-learn</dt><dd>Classical statistics &amp; ML: regression, classification, clustering, decision-trees, validation, SVM, EOF, ...</dd>
+	  <dt>Caffe</dt><dd>Fast CNN framework by Berkeley AI Research Lab.</dd>
+	  <dt>PyTorch</dt><dd>Deep Learning Framework by <span class="alert">Facebook</span></dd>
+	  <dt>Keras + TensorFlow</dt><dd>Keras is a deep learning high-level interface on top of TensorFlow (or others) by <span class="alert">Google</span>.</dd>
+	</dl>
+      </div>
+    </section>
+
+    <section> <!-- Python IDEs -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-20px;">
+	<h3><span class="alert">Py</span>thon</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-10px;border:solid" class="rightcolumn">
+	PIC HERE
+      </div>
+      <div style="margin-top:90px;" class="leftcolumn">
+	<h4>Python <span class="alert">IDE<span style="font-size:smaller;">s</span></h4>
+      <ul>
+	<li>Spyder</li>
+	<li>PyCharm</li>
+	<li>VSCodium</li>
+	<li>JupyterLab</li>
+      </ul>
+      </div>
+    </section>
+
+    <!-- DEMO Jupyter (and others) -->
+
+    <!-- +++++ R +++++ -->
+    <section> <!-- R packages -->
+      <div style="float:right;width:10%;margin-top:-30px;">
+	<img width="150" class="rawimg" src="assets/R_logo.svg" />
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div class="rightcolumn" style="margin-top:-20px;">
+      	PIC HERE
+      </div>
+      <div class="leftcolumn" style="margin-top:-40px;">
+	<h4>R <span class="alert">packages</span> you need to <span class="alert">learn</span></h4>
+	<p><b>The Tidyverse</b></p>
+	<ul style="margin-left:-180px">
+	  <li>dplyr,</li>
+	  <li>ridyr,</li>
+	  <li>tibble,</li>
+	  <li>ggplot2, ... </li>
+	</ul>
+	<p style="clear:left;">Modern packages for "<mark>Data Science</mark>" (Hadley Wickham)</p>
+      </div>
+    </section>
+
+
+    <section> <!-- R goodies -->
+      <div style="float:right;width:10%;margin-top:-100px;">
+	<img width="150" class="rawimg" src="assets/R_logo.svg" />
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div>
+	<h4>R <span class="alert">goodies</span></h4>
+      <dl >
+	<dt>Find R packages</dt><dd>CRAN <mark>Task Views</mark> : <a href="https://cran.r-project.org/web/views">https://cran.r-project.org/web/views</a></dd>
+	<dt>The R IDE</dt><dd><a href="https://rstudio.com/products/rstudio/download/#download">RStudio Desktop</a></dd>
+	<dt>Web-based interactive
+	  visualizations</dt><dd><mark>Shiny</mark>. Example: <a href="https://shiny.rstudio.com/gallery/explore-panel-data.html">ExPanD</a>. Also
+	  a cloud service.</dd>
+	<dt>knitr</dt><dd>Dynamic report generation, literate programming</dd>
+      </dl>
+      </div>
+    </section>
+
+    <!-- Examples for knitr: https://www.overleaf.com/learn/latex/Knitr -->
+
+    <!-- Coding Tips -->
+    <section>
+      <div style="float:right;width:50%;text-align:center;margin-top:-50px;">
+	<h3><span class="alert">Coding</span> Tips</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div>
+	<h4>Steps towards <span class="alert">better</span> code</h4><br />
+	<ol start="0">
+	  <li>A script without structure.</li>
+	  <li>Code is for humans: Comment and structure into sections!</li>
+	  <li>DRY, generalize: Write functions!</li>
+	  <li>Make code re-usable: Write a library!</li>
+	  <li>Get rid of hard-coded parameters: Make scripts take arguments -> <a href="http://docopt.org/">docopt</a></li>
+	  <li>Read a book: <a href="https://imagery.pragprog.com/products/595/tpp20.jpg?1557173963">The Pragmatic Programmer</a></li> 
+	</ol>
+      </div>
+    </section>
+
+    <!-- Demo Stages of Code -->
+
+    <!-- Version Control -->
+    <section>
+      <div style="float:right;width:50%;text-align:center;margin-top:-40px;">
+	<h3>Version <span class="alert">control</span></h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div>
+	<h4>Learn Git!</h4><br />
+	<ul>
+	  <li>Looks intimidating at first</li>
+	  <li>Once you know the important parts, it becomes easy.</li>
+	  <li>There will be courses.</li>
+	  <li>Put your stuff on <a href="https://github.com/eawag-rdm">GitHub</a> 
+	    (<a href="https://gitlab.switch.ch">gitlab.switch.ch</a>,
+	    <a href="https://framagit.org">framagit.org</a>, <a href="https://bitbucket.org">bitbucket.org</a>, ...)</li>
+	  <ul><li><mark><b>N</b>o Shame!</mark> Nobody reads your code anyway.</li>
+	    <li>Everybody lokks whether you have some.</li>
+	  </ul>
+	</ul>
+      </div>
+    </section>
+
+    <!-- Version Control -->
+    <section>
+      <div style="float:right;width:50%;text-align:center;margin-top:-40px;">
+	<h3>Version <span class="alert">control</span></h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div>
+	<h4>Why Git?</h4><br />
+	<ul>
+	  <li>It is the de-facto standard today and the most powerful option.</li>
+	  <li>A lot of infrastructure and workflows are connected with Git repositories.</li>
+	  <ul>
+	    <li>Workshop: "clone this repos,please"</li>
+	    <li>Open Source collaboration</li>
+	    <li>Continuous Integration tools</li>
+	    <li>
+	  <li>There will be courses.</li>
+	  <li>Put your stuff on <a href="https://github.com/eawag-rdm">GitHub</a> 
+	    (<a href="https://gitlab.switch.ch">gitlab.switch.ch</a>,
+	    <a href="https://framagit.org">framagit.org</a>, <a href="https://bitbucket.org">bitbucket.org</a>, ...)</li>
+	  <ul><li><mark><b>No</b> Shame!</mark> Nobody reads your code anyway.</li>
+	    <li>Everybody lokks whether you have some.</li>
+	  </ul>
+	</ul>
+      </div>
+    </section>
+
+
+<!-- + Use comments / Section the script -->
+<!-- + Settle on a coding style -->
+<!-- + Modularise (functions, classes, modules). A nfang : extra file für funktionen. -->
+<!-- + Refactor more often -->
+<!-- + Pass parameters to scripts (instead of changing the code) -->
+<!-- + Use default values instead of constants -->
+<!--  + docopt -->
+<!-- <section> <\!-- R packages -\-> -->
+    
+<!-- + Learn Python or R ? R better quality of pkgs. R ist spezialisierter. ML auch OK. -->
+<!-- + IDE: RStudio -->
+<!-- + Tidyverse (ggplot2) -->
+<!-- + Shiny (compare with Dash) -->
+<!-- + knitr -->
+<!-- + Ask Andreas for tipps -->
+<!-- + TAskView -->
+    
+    <!-- <section data-state-"pollev" data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/8GOoshOSNRuKLjg5Hmoin?preview=true&controls=none"></section> -->
+    <!-- <script> -->
+    <!--   document.getElementById('logo').style.display = 'none'; -->
+    <!-- </script> -->
+    
+    <section>
+      <div style="float:right;width:50%;text-align:center;margin-top:-100px;">
+	<h3>Python 2 vs. Python 3</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div>
+        <ul>
+          <li>
+          <li>
+          <li>
+          <li>
+        </ul>
+      </div>
+    </section>
+	
+  </section> <!-- END Programming & Scripting -->
+  
+  <section>
+    <div style="float:right;width:50%;text-align:center;margin-top:-100px;">
+      <h3><span class="alert">ERIC</span>/internal</h3>
+    </div>
+    <p style="clear:both;">&nbsp;</p>
+    <div>
+      <ul>
+	<li>Since <span class="alert">March 2016</span>:<br />requirement elicitation, development, testing, available for researchers</li>
+	<li><span class="alert">April 2018</span>: "public" beta</li>
+	<li><span class="alert">January 2019</span>: operational as core service</li>
+	<li><span class="alert">January 2019</span>:<br />"Directive on the archiving of research data at Eawag"
+     </ul>
+    </div>
+  </section>
+
+    <section>
+      <div style="float:right;width:50%;text-align:center;margin-top:-300px;">
+      	<h3><span class="alert">ERIC</span>/internal</h3>
+      </div>
+      <ul>
+	<li>Only accessible from within the Eawag network</li>
+	<li>Live Demo: <a href="https://data.eawag.ch">https://data.eawag.ch</a></li>
+      </ul>
+    </section>
+    
+    <section>
+      <div class="full">
+	<img src="assets/eric_int_home.png" class="full"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="full">
+	<img src="assets/eric_int_packages.png" class="full"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="full">
+	<img src="assets/eric_int_orga.png" class="full"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="full">
+	<img src="assets/eric_int_projects.png" class="full"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="full">
+	<img src="assets/eric_int_package.png" class="full"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="full">
+	<img src="assets/eric_int_preview.png" class="full"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="full">
+	<img src="assets/eric_int_create1.png" class="full"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="full">
+	<img src="assets/eric_int_create2.png" class="full"/>
+      </div>
+    </section>
+
+    <section>
+      <div class="full">
+	<img src="assets/eric_int_create3.png" class="full"/>
+      </div>
+    </section>
+    
+    <section>
+      <div style="float:right;width:50%;text-align:center;margin-top:0px;">
+      	<h3><span class="alert">ERIC</span>/internal</h3>
+      </div>
+      <div style="font-size:smaller">
+      <p style="clear:both;"></p>
+	<div class="rightcolumn">
+	  <h4><span class="alert">Publication</span> Data Package</h4>
+	  <ul class="condensed">
+	    <li>Associated with <b>one</b> publication</li>
+	    <li>Strongly required by Eawag policy.</li>
+	    <li>Package creation is streamlined -- every researcher can do it.</li>
+	    <li>Is often also Open Research Data.</li>
+	    <li>Link(s) to the publication in the metadata.</li>
+	    <li>Guidance document are available:
+	      <ul><li><a href="https://doi.org/10.25678/000066"
+	      target="_blank">Publishing and archiving of research
+		    data</a></li>
+		<li><a href="https://opendata.eawag.ch/dataset/checklist-for-the-general-review-of-a-data-package/resource/7b4e2220-9171-4750-887c-cfc0a20e60fc" target="_blank">Checklist
+		for the general review of a data package</a></li>
+	      </ul>
+	    </li>
+	  </ul>
+	</div>
+	<div class="leftcolumn fragment">
+	  <h4><span class="alert">General</span> Data Package</h4>
+	  <ul class="condensed">
+	    <li>Mostly associated with one workgroup / lab.</li>
+	    <li>Often only internal.</li>
+	    <li>Often many and/or large files.</li>
+	    <li>Requires individual consulting. Support intensive.</li>
+	    <li>Impacts organization / workflows of data management within labs.</li>
+	    <li>Scripts are available or custom tailored to ease
+	    package creation <span style="font-size:30px">(e.g batch-upload, automatic
+		metadata-generation, renaming).</span></li>
+	  </ul>
+	</div>
+      </div>
+    </section>
+    
+    <section>
+      <div style="float:right;width:50%;text-align:center;margin-top:0px;">
+      	<h3><span class="alert">Tech</span> Stack</h3>
+      </div>
+      <p style="clear:both;"></p>
+      <div class="rightcolumn" style="font-size:smaller;margin-top:40px;">
+      <ul class="condensed">
+	<li><img class="rawimg preimgfloat" src="assets/ckan-logo.png"
+		 style="vertical-align:middle;"/> The world’s leading Open Source
+	  data portal platform.</li>
+	<li><img src="assets/techstack.png" class="rawimg preimgfloat"
+	style="vertical-align:middle;"/> Written in
+	Python.<br />Standard building blocks.</li>
+	<li>Very large number of deployments worldwide.</li>
+	<li>Extensible through plugin-architecture.</li>
+	<li>Very powerful API.</li>
+	<li>Excellent documentation</li>
+	<li>Competent & helpful core team & community</li>
+	<li>Battle tested</li>
+      </ul>
+      </div>
+      <div class="leftcolumn fragment" style="font-size:smaller;margin-top:40px;">
+	<h4>Some installations</h4>
+	<ul class="condensed">
+	  <li><a href="https://data.gov" target="_blank">https://data.gov</a></li>
+	  <li><a href="https://data.nhm.ac.uk"
+	  target="_blank">https://data.nhm.ac.uk</a></li>
+	  <li><a href="https://europeandataportal.eu"
+	  target="_blank">https://europeandataportal.eu</a></li>
+	  <li><a href="http://b2find.eudat.eu"
+	  target="_blank">http://b2find.eudat.eu</a></li>
+	  <li><a href="https://opendata.swiss"
+	  target="_blank">https://opendata.swiss</a></li>
+	  <li><a href="https://data.stadt-zuerich.ch"
+	  target="_blank">https://data.stadt-zurich.ch</a></li>
+	  <li><a href="https://oasishub.co"
+	  target="_blank">https://oasishub.co</a></li>
+	  <li><a href="https://govdata.de" target="_blank">https://govdata.de</a></li>
+	  <li><a href="https://envidat.ch" target="_blank">https://envidat.ch</a></li>
+      </div>
+    </section>
+
+     <section>
+      <div style="float:right;text-align:center;margin-top:-80px;">
+      	<h3><span class="alert">ERIC</span>/open</h3>
+      </div>
+      <div>
+	<b>Since November 1, 2019:</b><br /><a href="https://opendata.eawag.ch" target="_blank>">https://opendata.eawag.ch</a>
+	<ul class="fragment" style="margin-top:30px;">
+	  <li>Same system. But completely independent (Webapp, SOLR, Postgres, Storage)</li>
+	  <li>No ingress, no users.</li>
+	  <li>In the process of being populated.</li>
+	  <li>Every package has a DOI (still pointing to Zenodo, mostly).</li>
+	  <li>Completely dockerized</li>
+	  <li>Latest CKAN version</li>
+	</ul>
+      </div>
+     </section>
+     
+    <section>
+      <div style="margin-top:50px;">
+	<img class="rawimg" src="assets/architecture1.svg"/>
+      </div>
+    </section>
+    <section>
+      <div style="margin-top:50px;">
+	<img class="rawimg" src="assets/architecture2.svg"/>
+      </div>
+    </section>
+    
+    <section>
+      <div style="float:right;text-align:center;margin-top:0px;">
+      	<h3><span class="alert">T</span>ODO<br />Technical <span class="alert">Challenges</span></h3>
+      </div>
+      <ul class="condensed">
+	<li>ORCID integration</li>
+	<li>Dora synchronization / paper tracking</li>
+	<li>Versioning</li>
+	<li>ERIC/i <-> ERIC/o autosync</li>
+	<li>Statistics (Make Data Count)</li>
+	<li>S3 storage backend</li>
+	<li>bulk download</li>
+	<li>refactoring, deployment polish, towards turnkey solution</li>
+	<li> ... </li>
+	<li><b>RDM Control</b></li>
+      </ul>
+    </section>
+    
+    <section>
+      <div style="float:right;text-align:center;margin-top:-80px;">
+      	<h3><span class="alert">Cultural</span>/Challenges</h3>
+      </div>
+      <div>
+	<ul style="margin-top:30px;">
+	  <li><b>Adoption</b>: Mixed experiences</li>
+	  <ul style="margin-bottom:30px;">
+	    <li>Young researchers are more enthusiastic than established ones</li>
+	    <li>Open Data is a major motivator</li>
+	    <li>Work to <span class="alert">prepare</span> data is underestimated</li>
+	  </ul>
+	  <li><b>Curation</b>: <span class="alert">Large</span> & unsolved</li>
+	  <li><span class="alert">Know-how</span> dissemination about data preparation</li>
+	  <li>Appointment of <span class="alert">Data Managers</span></li>
+	</ul>
+      </div>
+     </section>
+
+    <section>
+      <div style="float:right;text-align:center;margin-top:-20px;">
+      	<h3><span class="alert">Support</span>/Activities</h3>
+      </div>
+      <div>
+	<ul style="margin-top:30px;">
+	  <li><b>Guidance <span class="alert">m</span>aterial / documentation</b></li>
+	  <ul style="margin-bottom:30px;">
+	    <li><a href="https://opendata.eawag.ch/dmp/contents.html">DMP Guide</a></li>
+	    <li><a href="https://doi.org/10.25678/000066">Eawag publication & archiving guide</li>
+	    <li><a href="https://doi.org/10.25678/0001GB">Data Package Review Checklist</a></li>
+	  </ul>
+	  <li><b><span class="alert">W</span>orkshops</b></li>
+	  <ul style="margin-bottom:30px;">
+	    <li><span class="alert">D</span>MP workshops</li>
+	    <li><span class="alert">Git</span> workshops</li>
+            <li><span class="alert">Tactical</span> Tech workshop (Ipython, VMs, Docker, programming basics / tools, useful software, ...)</li>
+	  </ul>
+	</ul>
+      </div>
+    </section>
+    
+   <section>
+      <div style="float:right;text-align:center;margin-top:-20px;">
+      	<h3><span class="alert">Support</span>/Activities</h3>
+      </div>
+      <div>
+      	<ul style="margin-top:30px;">
+      	  <li><b>Individual <span class="alert">S</span>upport (core RDM), e.g.</b></li>
+      	  <ul style="margin-bottom:30px;">
+      	    <li>Large volume <span class="alert">data transfer</span> (we no have sftp!)</li>
+      	    <li>Field <span class="alert">collection</span> (Kobotools, Excel-Advice)</li>
+      	    <li>Laptop <span class="alert">encryption</span></li>
+      	    <li> Data organization for projects</li>
+      	  </ul>
+      	  <li><b><span class="alert">Extended</span> Support</b> (-> "scientific programming"), e.g.</li>
+      	  <ul style="margin-bottom:30px;">
+      	    <li>Web-<span class="alert">App</span> development / deployment (VM, SWITCH)</li>
+      	    <li><span class="alert">SIS</span> - Liaison (contracting)</li>
+      	  </ul>
+	  <li><b><span class="alert">IT admin</span> work</b>,
+	  e.g. storage</span> administration and planning.</li>
+     	</ul>
+      </div>
+     </section>
+
+   <section>
+      <div style="float:right;text-align:center;margin-top:-150px;">
+      	<h3><span class="alert">O</span>pportunities</h3>
+      </div>
+      <div>
+      	<ul style="margin-top:30px;">
+      	  <li><b><span class="alert">C</span>ollaborations
+      	  / <span class="alert">s</span>ynergies</b> with other
+      	  intitutions / groups</li>
+      	  <ul style="margin-bottom:30px;">
+      	    <li>Repository: <span class="alert">WSL</span> / <b>EnviDat</b></li>
+      	    <li>WSL: Workshops / Lectures / possibly OpenBIS in the future</li>
+      	    <li>Documentation / Guides: potentially with <span class="alert">everybody</span></li>
+      	  </ul>
+      	  <li><b>Idea</b>: RDM <span class="alert">initiatives</span>
+      	    of various ETH Domain entities should formalise
+      	    their <span class="alert">cooperation</span>.</li>
+     	</ul>
+      </div>
+     </section>
+
+
+    <section>
+      <div class="full" style="background:white;">
+	<h1><span class="alert">Q</span>uestions?</h1>
+	<br />
+      <img class="rawimg" width="50%" src="assets/cartoon.png" />
+      </div>
+    </section>
+
+   </div>
+</div>
+
+
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Vertical centering of slides
+        center: true,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1024,
+        height: 768,
+        //width: 1090,
+        //height:1200,
+        // Factor of the display size that should remain empty around the content
+        margin: 0.03,
+        zoomKey: 'shift',
+        slideNumber: true,
+        hash: true,
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    <script>
+      Reveal.addEventListener( 'slidechanged', function( event ) {
+          var pollactive = document.getElementsByClassName('pollev').length;
+          console.log(pollactive);
+          if (pollactive >= 1) {
+            document.getElementById('logo').style.display = 'none';
+          } else {
+            document.getElementById('logo').style.display = 'block';
+          }
+
+      <!-- var state = Reveal.getState(); -->
+      <!--     console.log(state.indexh); -->
+      <!--     if ( state.indexh === 2) { -->
+      <!--       document.getElementById('logo').style.display = 'none'; -->
+      <!--     } else { -->
+      <!--       document.getElementById('logo').style.display = 'block'; -->
+      <!--     } -->
+      } );
+      
+      <!-- Reveal.addEventListener( 'pollev', function() { -->
+      <!--   document.getElementById('logo').style.display = 'none'; -->
+      <!--     var state = Reveal.getState(); -->
+      <!--     console.log(state); -->
+      <!-- }, false ); -->
+      <!-- document.getElementById('logo').style.display = block'; -->
+    </script>
+  </body>
 </html>
