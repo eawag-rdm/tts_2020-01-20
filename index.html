@@ -75,12 +75,14 @@
 	   data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/UNhLblvpDfvxJm5K06iD1?preview=true&controls=none"></section>
 
   <!-- Programming & Scripting -->
-  <section> 
+  <section>
+    
     <section>
       <div><!-- style="float:right;width:50%;text-align:center;margin-top:-150px;" -->
 	<h3>Scripting &amp; <span class="alert">Programming</span></h3>
       </div>
     </section>
+    
     <section data-state="pollev"
 	     data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/TIKVVHVGElrZOQuWpSjcW?preview=true&controls=none"></section>
     
@@ -109,18 +111,27 @@
     </section>
 
     <section> <!-- Python2 vs Python3 -->
-      <div style="float:right;width:50%;text-align:center;margin-top:-200px;">
+      <div style="float:right;width:50%;text-align:center;margin-top:-30px;">
 	<h3><span class="alert">Py</span>thon</h3>
       </div>
       <p style="clear:both;">&nbsp;</p>
-      <div>
-	<h4>Python <span class="alert">2</span> versus Python <span class="alert">3</span></h4>
+      <div style="text-align:left;">
+	<p><b>Python<span class="alert">2</span> versus Python<span class="alert">3</span></b></p>
         <ul>
 	  <li><b>Incompatible!</b>
 	  <li> ... but lots of help to port from 2 to 3</li>
 	  <li>Use <mark>Python 3</mark> unless you need legacy packages</li>
 	</ul>
       </div>
+      <div style="text-align:left;">
+	<p><b>Python <span class="alert">encapsulation</span></b></p>
+	<ul>
+	  <li>Always work in virtual environments!</li>
+	  <li>Use <b><mark>virtualenv</mark></b> + <b>pip</b>, or</li>
+	  <li><b><mark>conda</mark></b></li>
+	</ul>
+      </div>
+
     </section>
 
     <!-- DEMO Py2 vs. Py 3 features. Division -->
@@ -144,39 +155,44 @@
 	<h3><span class="alert">Py</span>thon</h3>
       </div>
       <p style="clear:both;">&nbsp;</p>
-      <div style="margin-top:-50px">
+      <div style="margin-top:-60px">
 	<h4>Python <span class="alert">packages</span> for ML / AI</h4>
 	<p>Python is "<mark>industry-standard</mark>" when it comes to ANN, CNN, RNN, GAN, ..., "<mark>deep-</mark>anything".</p>
 	<dl>
 	  <dt>scikit-learn</dt><dd>Classical statistics &amp; ML: regression, classification, clustering, decision-trees, validation, SVM, EOF, ...</dd>
 	  <dt>Caffe</dt><dd>Fast CNN framework by Berkeley AI Research Lab.</dd>
 	  <dt>PyTorch</dt><dd>Deep Learning Framework by <span class="alert">Facebook</span></dd>
-	  <dt>Keras + TensorFlow</dt><dd>Keras is a deep learning high-level interface on top of TensorFlow (or others) by <span class="alert">Google</span>.</dd>
+	  <dt>Keras + TensorFlow</dt><dd>Deep learning high-level interface by <span class="alert">Google</span>.</dd>
 	</dl>
       </div>
     </section>
 
+  <section data-state="pollev"
+	   data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/vyasoz19gXNRDMXnTGmiX?preview=true&controls=none"></section>
+
+    
     <section> <!-- Python IDEs -->
-      <div style="float:right;width:50%;text-align:center;margin-top:-20px;">
+      <div style="float:right;width:50%;text-align:center;margin-top:-140px;">
 	<h3><span class="alert">Py</span>thon</h3>
       </div>
       <p style="clear:both;">&nbsp;</p>
-      <div style="margin-top:-10px;border:solid" class="rightcolumn">
-	PIC HERE
-      </div>
-      <div style="margin-top:90px;" class="leftcolumn">
-	<h4>Python <span class="alert">IDE<span style="font-size:smaller;">s</span></h4>
+      <div style="margin-top:-20px;">
+	<h4>Python <span class="alert">IDE<span style="font-size:smaller;">s</span></h4><br />
       <ul>
 	<li>Spyder</li>
 	<li>PyCharm</li>
 	<li>VSCodium</li>
-	<li>JupyterLab</li>
+	<li>JupyterLab (Demo), <a href="https://colab.research.google.com/github/theevann/amld-pytorch-workshop/blob/master/5-CNN.ipynb">Colab</a></li>
       </ul>
       </div>
     </section>
 
     <!-- DEMO Jupyter (and others) -->
 
+  <section data-state="pollev"
+	   data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/n2zADcAmWX6ZxAHRCKEA1?preview=true&controls=none"></section>
+
+    
     <!-- +++++ R +++++ -->
     <section> <!-- R packages -->
       <div style="float:right;width:10%;margin-top:-30px;">
@@ -184,7 +200,7 @@
       </div>
       <p style="clear:both;">&nbsp;</p>
       <div class="rightcolumn" style="margin-top:-20px;">
-      	PIC HERE
+      	<img src="assets/tidyverse.jpg" class="rawimg" />
       </div>
       <div class="leftcolumn" style="margin-top:-40px;">
 	<h4>R <span class="alert">packages</span> you need to <span class="alert">learn</span></h4>
@@ -201,11 +217,11 @@
 
 
     <section> <!-- R goodies -->
-      <div style="float:right;width:10%;margin-top:-100px;">
+      <div style="float:right;width:10%;margin-top:0px;">
 	<img width="150" class="rawimg" src="assets/R_logo.svg" />
       </div>
       <p style="clear:both;">&nbsp;</p>
-      <div>
+      <div style="margin-top:-80px;">
 	<h4>R <span class="alert">goodies</span></h4>
       <dl >
 	<dt>Find R packages</dt><dd>CRAN <mark>Task Views</mark> : <a href="https://cran.r-project.org/web/views">https://cran.r-project.org/web/views</a></dd>
@@ -214,15 +230,22 @@
 	  visualizations</dt><dd><mark>Shiny</mark>. Example: <a href="https://shiny.rstudio.com/gallery/explore-panel-data.html">ExPanD</a>. Also
 	  a cloud service.</dd>
 	<dt>knitr</dt><dd>Dynamic report generation, literate programming</dd>
+	<dt>checkpoint</dt><dd>A snapshot of all package versions (<i>h/t Andreas</i>)
+	  <pre><code>library(checkpoint)
+	      checkpoint("2015-01-15")</code></pre></dd>
       </dl>
       </div>
     </section>
 
     <!-- Examples for knitr: https://www.overleaf.com/learn/latex/Knitr -->
 
+  <section data-state="pollev"
+	   data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/8xnQiEdk1ApZpoF3KcsBO?preview=true&controls=none"></section>
+
+    
     <!-- Coding Tips -->
     <section>
-      <div style="float:right;width:50%;text-align:center;margin-top:-50px;">
+      <div style="float:right;width:50%;text-align:center;margin-top:-20px;">
 	<h3><span class="alert">Coding</span> Tips</h3>
       </div>
       <p style="clear:both;">&nbsp;</p>
@@ -230,19 +253,21 @@
 	<h4>Steps towards <span class="alert">better</span> code</h4><br />
 	<ol start="0">
 	  <li>A script without structure.</li>
-	  <li>Code is for humans: Comment and structure into sections!</li>
-	  <li>DRY, generalize: Write functions!</li>
-	  <li>Make code re-usable: Write a library!</li>
+	  <li>Code is for <span class="alert">humans</span>: Comment and <span class="alert">structure</span> into sections!</li>
+	  <li>DRY, generalize: Write <span class="alert">functions</span>!</li>
+	  <li>Make code re-usable: Write a <span class="alert">library</span>!</li>
 	  <li>Get rid of hard-coded parameters: Make scripts take arguments -> <a href="http://docopt.org/">docopt</a></li>
 	  <li>Read a book: <a href="https://imagery.pragprog.com/products/595/tpp20.jpg?1557173963">The Pragmatic Programmer</a></li> 
 	</ol>
       </div>
     </section>
 
-    <!-- Demo Stages of Code -->
+  <section data-state="pollev"
+	   data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/7EMBPe5AEHuKIAafMp1rG?preview=true&controls=none"></section>
+
 
     <!-- Version Control -->
-    <section>
+    <section> <!-- Learn Git -->
       <div style="float:right;width:50%;text-align:center;margin-top:-40px;">
 	<h3>Version <span class="alert">control</span></h3>
       </div>
@@ -257,373 +282,406 @@
 	    (<a href="https://gitlab.switch.ch">gitlab.switch.ch</a>,
 	    <a href="https://framagit.org">framagit.org</a>, <a href="https://bitbucket.org">bitbucket.org</a>, ...)</li>
 	  <ul><li><mark><b>N</b>o Shame!</mark> Nobody reads your code anyway.</li>
-	    <li>Everybody lokks whether you have some.</li>
+	    <li>Everybody looks whether you have some.</li>
 	  </ul>
 	</ul>
       </div>
     </section>
 
     <!-- Version Control -->
-    <section>
-      <div style="float:right;width:50%;text-align:center;margin-top:-40px;">
+    <section> <!-- Why Git -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-90px;">
+	<h3>Version <span class="alert">control</span></h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-30px;">
+	<h4>Why Git?</h4><br />
+	<ul class="condensed">
+	  <li>It is the de-facto standard today and the most powerful option.</li>
+	  <li>A lot of infrastructure and workflows are connected with Git repositories.</li>
+	  <ul>
+	    <li>Workshop: "clone this repo, please"</li>
+	    <li>Open Source collaboration</li>
+	    <li>Continuous Integration tools</li>
+	    <li>JupyterLab - <a href="https://mybinder.org/">binder</a> - <a href="https://nbviewer.jupyter.org/">nbviewer</a> 
+	</ul>
+      </div>
+    </section>
+
+    <!-- Version Control -->
+    <section> <!-- Git, what for? -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-140px;">
 	<h3>Version <span class="alert">control</span></h3>
       </div>
       <p style="clear:both;">&nbsp;</p>
       <div>
-	<h4>Why Git?</h4><br />
+	<h4>Git, what for?</h4><br />
 	<ul>
-	  <li>It is the de-facto standard today and the most powerful option.</li>
-	  <li>A lot of infrastructure and workflows are connected with Git repositories.</li>
-	  <ul>
-	    <li>Workshop: "clone this repos,please"</li>
-	    <li>Open Source collaboration</li>
-	    <li>Continuous Integration tools</li>
-	    <li>
-	  <li>There will be courses.</li>
-	  <li>Put your stuff on <a href="https://github.com/eawag-rdm">GitHub</a> 
-	    (<a href="https://gitlab.switch.ch">gitlab.switch.ch</a>,
-	    <a href="https://framagit.org">framagit.org</a>, <a href="https://bitbucket.org">bitbucket.org</a>, ...)</li>
-	  <ul><li><mark><b>No</b> Shame!</mark> Nobody reads your code anyway.</li>
-	    <li>Everybody lokks whether you have some.</li>
-	  </ul>
+	  <li>Version control for software development, duh</li>
+	  <li>Convenient and efficient backup</li>
+	  <li>Organization of and collaboration on text-documents</li>
+	  <li>Trace the provenance of any data</li>
 	</ul>
       </div>
     </section>
+  </section> <!-- END Programming and Scripting -->
 
+  <section data-state="pollev"
+	   data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/joSOs8n6WCfPdcN3Qgqsc?preview=true&controls=none"></section>
 
-<!-- + Use comments / Section the script -->
-<!-- + Settle on a coding style -->
-<!-- + Modularise (functions, classes, modules). A nfang : extra file für funktionen. -->
-<!-- + Refactor more often -->
-<!-- + Pass parameters to scripts (instead of changing the code) -->
-<!-- + Use default values instead of constants -->
-<!--  + docopt -->
-<!-- <section> <\!-- R packages -\-> -->
-    
-<!-- + Learn Python or R ? R better quality of pkgs. R ist spezialisierter. ML auch OK. -->
-<!-- + IDE: RStudio -->
-<!-- + Tidyverse (ggplot2) -->
-<!-- + Shiny (compare with Dash) -->
-<!-- + knitr -->
-<!-- + Ask Andreas for tipps -->
-<!-- + TAskView -->
-    
-    <!-- <section data-state-"pollev" data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/8GOoshOSNRuKLjg5Hmoin?preview=true&controls=none"></section> -->
-    <!-- <script> -->
-    <!--   document.getElementById('logo').style.display = 'none'; -->
-    <!-- </script> -->
+  
+  <section> <!-- Text and Graphics -->
     
     <section>
-      <div style="float:right;width:50%;text-align:center;margin-top:-100px;">
-	<h3>Python 2 vs. Python 3</h3>
+      <div><!-- style="float:right;width:50%;text-align:center;margin-top:-150px;" -->
+	<h3>Text &amp; <span class="alert">Presentations</span></h3>
+      </div>
+    </section>
+
+    <section>   <!-- M a r k d o w n  -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-20px;">
+	<h3><span class="alert">Mark</span>down</h3>
       </div>
       <p style="clear:both;">&nbsp;</p>
       <div>
-        <ul>
-          <li>
-          <li>
-          <li>
-          <li>
-        </ul>
+	<ul>
+	  <li>Extremly <span class="alert">simple</span> markup-language</li>
+	  <li>Human <span class="alert">readable</span> (unlike html, xml)</li>
+	  <li>Can do everything you need in a scientific article</li>
+	  <li>Has become <span class="alert">ubiquitous</span><br />
+	  (wikis, commenting systems, GitHub-README,
+	  webpage-generators, <a href="https://www.authorea.com/product">authorea.com</a>...</li>
+	  <li>Can be rendered to <i><b>html</b></i>, <i><b>pdf</b></i>, <i>epub</i>, <i>LaTeX</i>, even <i>docx</i> and <i>odt</i>, ....</li>
+	  <li>Can be <span class="alert">mixed</span> with plain LaTeX or html</li>
+	</ul>
       </div>
     </section>
-	
-  </section> <!-- END Programming & Scripting -->
+
+    <section data-state="pollev"
+	     data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/HLdQwGXH2QnX2EKsCcbV9?preview=true&controls=none"></section>
+
+    <!-- DEMO ReText -->
+    <!-- DEMO poor man's writer -->
+    
+    <section>
+      <div style="float:right;width:50%;text-align:center;margin-top:-20px;">
+	<h3><span class="alert">Presentations</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div>
+	<h4> <span class="alert">All</span> tools for presentions are <span class="alert"><b>not</b></span> fun.</h4>
+	<ul>
+	  <li>One <span class="alert">alternative</span> to PowerPoint are <span class="alert">web-based presentations</span>.</li>
+	  <li>Like <span class="alert">this</span> one</li>
+	  <li>One tool to make them: <a href="https://revealjs.com">reveal.js</a></li>
+	  <li>For GUI oriented people: <a href="https://slides.com/hvw/new">slides.com</a></li>
+	  <li>Triple-safety: On the web, on your laptop, on a stick, as PDF</li>
+	  <li>Also good for live-notetaking</li>
+      </div>
+    </section>
+
+   <section data-state="pollev"
+	     data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/BvwvXj9RlSFZ52nEyOM7Q?preview=true&controls=none"></section>
+
+    
+    <section>
+      <div style="float:right;width:50%;text-align:center;margin-top:-20px;">
+	<h3><span class="alert">Git and Writing</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-20px;">
+	<h4>Collaborating on text-documents<br />using Markdown &amp; Git</h4>
+	<ul>
+	  <li>Only likely in a few fields:<br />
+	  Co-authors must know Markdown &amp; Git, a bit.</li>
+	  <li>There are commercial cloud-based offers with a
+	  GUI:<br /> e.g. <a href="https://www.authorea.com/product">authorea.com</a></li>
+	  <li>Good for coordinating the input of many contributors:</li>
+	  <ul>
+	    <li>See changes by everybody immediately</li>
+	    <li>Keep record of changes automatically</li>
+	    <li>Get help with merging multiple contributions</li>
+	  </ul>
+      </div>
+    </section>
+
+    <!-- DEMO meld -->
+    
+  </section> <!-- END Text and Presentations -->
   
-  <section>
-    <div style="float:right;width:50%;text-align:center;margin-top:-100px;">
-      <h3><span class="alert">ERIC</span>/internal</h3>
-    </div>
-    <p style="clear:both;">&nbsp;</p>
-    <div>
+  <section> <!-- Start Data collection & cleaning -->
+    <section>
+      <div><!-- style="float:right;width:50%;text-align:center;margin-top:-150px;" -->
+    	<h3><span class="alert">Data</span> collection &amp; cleaning</span></h3>
+      </div>
+    </section>
+
+    <section> <!-- KoBoToolbox  -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-20px;">
+    	<h3><span class="alert">Data</span> collection in <span class="alert">the field</span></h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-20px;">
+	<h4><a href="https://www.kobotoolbox.org/">KoBoToolbox</a></h4>
+    	<ul>
+    	  <li> => <a href="https://kf.kobotoolbox.org/#/forms/ausah8TwJfSW333wTn4Vgb/edit">Form design</a></li>
+    	  <li> => <a href="https://ee.kobotoolbox.org/x/#cD0WLXFP">Data entry</a></li>
+    	  <li>Complex, e.g. <span class="alert">conditional</span> forms possible</li>
+    	  <li>Completely <span class="alert">Open Source</span> &amp; community run</li>
+    	  <li><span class="alert">Self-hosting</span> possible</li>
+	  <li>Works for desaster relief in the developing world<br /> => might even work in DE</li>
+    	</ul>
+      </div>
+    </section>
+
+
+    <!-- DEMO KoBoToolbox -->
+
+    <section data-state="pollev"
+	     data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/AjV9JJEcJLYHCqsB1meUr?preview=true&controls=none"></section>
+
+
+    <section> <!-- No backup, no pity 1-->
+      <div style="float:right;width:50%;text-align:center;margin-top:-70px;">
+    	<h3>Back<span class="alert">up</span></h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div class="rightcolumn"style="height:400px;">
+	<img width="400"class="rawimg" src="assets/laptop.jpg">
+      </div>
+      <div class="leftcolumn" style="margin-top:-0px;height:400px;">
+	<ul>
+	  <li>Always have at least<br /><mark>2 copies</mark> in existence</li>
+	  <li><b>Rule of three</b>:</li>
+	  <ul class="condensed">
+	    <li><mark>3</mark> copies</li>
+	    <li><mark>2</mark> different storage media</li>
+	    <li><mark>1</mark> off-site backup</li>
+	  </ul>
+	</ul>
+      </div>
+    <div style="clear:right;">
+      <p>Pay particular attention to <mark>transfer situations</mark>, e.g.<br />
+	datalogger <span class="alert">-></span> laptop <span class="alert">-></span> field station</p>
+      </div>
+    </section>
+
+    <section> <!-- No backup, no pity 2-->
+      <div style="float:right;width:50%;text-align:center;margin-top:-110px;">
+    	<h3>Back<span class="alert">up</span></h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <h4><mark>Automatize</mark> as much as possible</h4><br />
       <ul>
-	<li>Since <span class="alert">March 2016</span>:<br />requirement elicitation, development, testing, available for researchers</li>
-	<li><span class="alert">April 2018</span>: "public" beta</li>
-	<li><span class="alert">January 2019</span>: operational as core service</li>
-	<li><span class="alert">January 2019</span>:<br />"Directive on the archiving of research data at Eawag"
-     </ul>
-    </div>
+	<li><b>Laptop</b>: Use an <mark>automatically scheduled</mark> script</li>
+	<li style="list-style:none;">&nbsp;&nbsp;&nbsp;-> Backup to <span class="alert">external</span> drive / memory-stick.</li>
+	<li style="list-style:none;">&nbsp;&nbsp;&nbsp;-> Carry backup-medium <span class="alert">separately</span> during transport.</li>
+	<li style="list-style:none;">&nbsp;&nbsp;&nbsp;->
+	Use <span class="alert">reverse differential backup</span> if
+	  possible,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. <a href="https://rdiff-backup.net/index.html">rdiff-backup</a>.</li>
+    </section>
+
+    <section data-state="pollev"
+	     data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/VJHaKGhK9Aytuu4dujWis?preview=true&controls=none"></section>
+
+    
+    <section> <!-- OpenRefine -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-110px;">
+    	<h3>Data <span class="alert">cleaning</span></h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-0px;">
+	<span class="alert"><b>Interactively</b></span> clean, sort, transform <span class="alert">messy</span> data:<br /><br />
+	<a href="https://openrefine.org/">OpenRefine</a>
+	<div style="margin-top:50px;">
+	  <img width="400" src="assets/openrefine.jpg" class="rawimg" />
+	</div>
+      </div>
+    </section>
+    
+    <!-- DEMO OpenRefine -->
+
+  </section> <!-- END Data collection & cleaning -->
+  
+  <section> <!-- START Data organization & Databases -->
+    <section>
+      <div><!-- style="float:right;width:50%;text-align:center;margin-top:-150px;" -->
+    	<h3><span class="alert">Data</span> organization &amp; <span class="alert">Databases</span></h3>
+      </div>
+    </section>
+
+    <section> <!-- Filesystem -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-30px;">
+    	<h3><span class="alert">File</span> system</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-30px">
+	<h4>File <span class="alert">naming</span></h4>
+	<ul>
+	  <li>Have a <span class="alert">clearly defined</span> naming- and organization <span class="alert">scheme</span>!</li>
+	</ul>
+	<div style="margin-top:20px;">
+	  <img width="900" src="assets/filenaming.png" class="rawimg" />
+	</div>
+      </div>
+    </section>
+
+    <section> <!-- Excel & csv -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-60px;">
+    	<h3><span class="alert">Tabular</span> data</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-0px">
+	<h4><span class="alert">Avoid Excel</span> files <span style="font-size:smaller;">(like the plague)</span></h4>
+	<ul class="condensed">
+	  <li>Numerous bugs in statistical functions<br />=> A <mark>no-go for analysis</mark>.</li>
+	  <li>Mixing of <span class="alert">data</span>
+	  storage, <span class="alert">display</span>
+	  &amp; <span class="alert">programming</span><br />=>
+	    guarantees <mark>non-reproducibility</mark>.</li>
+	  <li>Not a proper file-format standard<br />=> <mark>non-portability</mark> (even across MS-Office versions)</li>
+	  <li>Bugs in the calendar. Never use "cell-format" = "Date"!</li>
+	  <li>Auto-correction accidents: <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7">Ziemann et al.</a></li>
+	  <li><a href="http://www.eusprig.org">European Spreadsheet Risks Interest Group</a></li>
+	</ul>
+     </div>
+    </section>
+
+    <section> <!-- Excel & csv -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-70px;">
+    	<h3><span class="alert">Tabular</span> data</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="float:right;">
+	<img height="400" src="assets/reinhart-rogoff.png" class="rawimg" />
+      </div>
+      <div style="margin-top:-0px;">
+	<h4>Excel is <span class="alert">good</span></h4>
+	<div style="text-align:left;">
+	<ul class="condensed">
+	  <li>For <span class="alert">typing</span> data into a table</li>
+	  <li>For <span class="alert">looking</span> at a data table</li>
+	  <li>For <span class="alert">disciplined</span> usage</li>
+	</ul>
+	</div>
+      </div>
+	<p style="clear:both;">
+	  If you use Excel,
+	  read<br /><a href="https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989">Broman
+	    &amp; Woo (2018). Data Organization in Spreadsheets</a>
+	</p>
+    </section>
+
+    <section> <!-- csv & serialization -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-180px;">
+    	<h3><span class="alert">Tabular</span> data</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-0px;">
+	<ul>
+	  <li>Use simple tab- or comma-separated files</li>
+	  <li>Make sure they are UTF-8 encoded, if they contain special characters</li>
+	  <li>Use open formats provided by your analysis language<br />(  R: <i>save()</i>, Python: <i>pickle.dump()</i>  )</li>
+	</ul>
+      </div>
+    </section>
+
+    <section> <!-- csv & serialization -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-30px;">
+    	<h3>Data<span class="alert">bases</span></h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-0px;">
+	<p>
+	  When you spend a lot of time in your analysis code to
+	</p>
+	<b><span class="alert">load</span> the right <span class="alert">files</span> &amp <span class="alert">extract</span> the right <span class="alert">data</span></b>
+	<p>maybe you need a database.</p>
+	<dl>
+	  <dt>MS-Access</dt><dd>Good for <mark>one local user</mark>
+	    (with write permissions). Nice GUI for table-design &amp;
+	    query-forms. Good for <mark>interactive</mark> use.</dd>
+	  <dt>SQLite</dt><dd>Good for <mark>one local user</mark>
+	    (with write permissions). <mark><b>Integrated</b></mark>
+	    into RSQLite (R) and sqlite3
+	    (Python). Good for <mark>programmatic</mark> use</dd>
+	  <dt>RDBMS</dt><dd><mark>Multi-user</mark>, server-based. E.g. PostgreSQL, MariaDB, MS SQL Server</dd>
+	</dl>
+      </div>
+    </section>
+  </section> <!-- END of Data organization & Databases -->
+
+   <section data-state="pollev"
+	    data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/g1hAryhbMK5S4veZ3NGrK?preview=true&controls=none"></section>
+
+  
+  <section> <!-- Start of Virtualization -->
+    <section>
+      <div><!-- style="float:right;width:50%;text-align:center;margin-top:-150px;" -->
+    	<h3><span class="alert">Virtual</span>ization</span></h3>
+      </div>
   </section>
 
-    <section>
-      <div style="float:right;width:50%;text-align:center;margin-top:-300px;">
-      	<h3><span class="alert">ERIC</span>/internal</h3>
+    <section> <!-- Virtual Machines -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-40px;">
+    	<h3><span class="alert">Virtual</span> Machines</h3>
       </div>
-      <ul>
-	<li>Only accessible from within the Eawag network</li>
-	<li>Live Demo: <a href="https://data.eawag.ch">https://data.eawag.ch</a></li>
-      </ul>
-    </section>
-    
-    <section>
-      <div class="full">
-	<img src="assets/eric_int_home.png" class="full"/>
-      </div>
-    </section>
-
-    <section>
-      <div class="full">
-	<img src="assets/eric_int_packages.png" class="full"/>
-      </div>
-    </section>
-
-    <section>
-      <div class="full">
-	<img src="assets/eric_int_orga.png" class="full"/>
-      </div>
-    </section>
-
-    <section>
-      <div class="full">
-	<img src="assets/eric_int_projects.png" class="full"/>
-      </div>
-    </section>
-
-    <section>
-      <div class="full">
-	<img src="assets/eric_int_package.png" class="full"/>
-      </div>
-    </section>
-
-    <section>
-      <div class="full">
-	<img src="assets/eric_int_preview.png" class="full"/>
-      </div>
-    </section>
-
-    <section>
-      <div class="full">
-	<img src="assets/eric_int_create1.png" class="full"/>
-      </div>
-    </section>
-
-    <section>
-      <div class="full">
-	<img src="assets/eric_int_create2.png" class="full"/>
-      </div>
-    </section>
-
-    <section>
-      <div class="full">
-	<img src="assets/eric_int_create3.png" class="full"/>
-      </div>
-    </section>
-    
-    <section>
-      <div style="float:right;width:50%;text-align:center;margin-top:0px;">
-      	<h3><span class="alert">ERIC</span>/internal</h3>
-      </div>
-      <div style="font-size:smaller">
-      <p style="clear:both;"></p>
-	<div class="rightcolumn">
-	  <h4><span class="alert">Publication</span> Data Package</h4>
-	  <ul class="condensed">
-	    <li>Associated with <b>one</b> publication</li>
-	    <li>Strongly required by Eawag policy.</li>
-	    <li>Package creation is streamlined -- every researcher can do it.</li>
-	    <li>Is often also Open Research Data.</li>
-	    <li>Link(s) to the publication in the metadata.</li>
-	    <li>Guidance document are available:
-	      <ul><li><a href="https://doi.org/10.25678/000066"
-	      target="_blank">Publishing and archiving of research
-		    data</a></li>
-		<li><a href="https://opendata.eawag.ch/dataset/checklist-for-the-general-review-of-a-data-package/resource/7b4e2220-9171-4750-887c-cfc0a20e60fc" target="_blank">Checklist
-		for the general review of a data package</a></li>
-	      </ul>
-	    </li>
-	  </ul>
-	</div>
-	<div class="leftcolumn fragment">
-	  <h4><span class="alert">General</span> Data Package</h4>
-	  <ul class="condensed">
-	    <li>Mostly associated with one workgroup / lab.</li>
-	    <li>Often only internal.</li>
-	    <li>Often many and/or large files.</li>
-	    <li>Requires individual consulting. Support intensive.</li>
-	    <li>Impacts organization / workflows of data management within labs.</li>
-	    <li>Scripts are available or custom tailored to ease
-	    package creation <span style="font-size:30px">(e.g batch-upload, automatic
-		metadata-generation, renaming).</span></li>
-	  </ul>
-	</div>
-      </div>
-    </section>
-    
-    <section>
-      <div style="float:right;width:50%;text-align:center;margin-top:0px;">
-      	<h3><span class="alert">Tech</span> Stack</h3>
-      </div>
-      <p style="clear:both;"></p>
-      <div class="rightcolumn" style="font-size:smaller;margin-top:40px;">
-      <ul class="condensed">
-	<li><img class="rawimg preimgfloat" src="assets/ckan-logo.png"
-		 style="vertical-align:middle;"/> The world’s leading Open Source
-	  data portal platform.</li>
-	<li><img src="assets/techstack.png" class="rawimg preimgfloat"
-	style="vertical-align:middle;"/> Written in
-	Python.<br />Standard building blocks.</li>
-	<li>Very large number of deployments worldwide.</li>
-	<li>Extensible through plugin-architecture.</li>
-	<li>Very powerful API.</li>
-	<li>Excellent documentation</li>
-	<li>Competent & helpful core team & community</li>
-	<li>Battle tested</li>
-      </ul>
-      </div>
-      <div class="leftcolumn fragment" style="font-size:smaller;margin-top:40px;">
-	<h4>Some installations</h4>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-60px;">
+	<p>Run <mark>another operating system</mark> on your Desktop</p>
 	<ul class="condensed">
-	  <li><a href="https://data.gov" target="_blank">https://data.gov</a></li>
-	  <li><a href="https://data.nhm.ac.uk"
-	  target="_blank">https://data.nhm.ac.uk</a></li>
-	  <li><a href="https://europeandataportal.eu"
-	  target="_blank">https://europeandataportal.eu</a></li>
-	  <li><a href="http://b2find.eudat.eu"
-	  target="_blank">http://b2find.eudat.eu</a></li>
-	  <li><a href="https://opendata.swiss"
-	  target="_blank">https://opendata.swiss</a></li>
-	  <li><a href="https://data.stadt-zuerich.ch"
-	  target="_blank">https://data.stadt-zurich.ch</a></li>
-	  <li><a href="https://oasishub.co"
-	  target="_blank">https://oasishub.co</a></li>
-	  <li><a href="https://govdata.de" target="_blank">https://govdata.de</a></li>
-	  <li><a href="https://envidat.ch" target="_blank">https://envidat.ch</a></li>
-      </div>
-    </section>
-
-     <section>
-      <div style="float:right;text-align:center;margin-top:-80px;">
-      	<h3><span class="alert">ERIC</span>/open</h3>
-      </div>
-      <div>
-	<b>Since November 1, 2019:</b><br /><a href="https://opendata.eawag.ch" target="_blank>">https://opendata.eawag.ch</a>
-	<ul class="fragment" style="margin-top:30px;">
-	  <li>Same system. But completely independent (Webapp, SOLR, Postgres, Storage)</li>
-	  <li>No ingress, no users.</li>
-	  <li>In the process of being populated.</li>
-	  <li>Every package has a DOI (still pointing to Zenodo, mostly).</li>
-	  <li>Completely dockerized</li>
-	  <li>Latest CKAN version</li>
+	  <li>Main system: <span class="alert">Windows</span>, run Linux to for devlopment</li>
+	  <li>Main system: <span class="alert">Linux</span>, run Windows for Outlook, MS-Office, ...</li>
+	  <li>Share a whole <span class="alert">development machine</span> with complete setup</li>
 	</ul>
-      </div>
-     </section>
-     
-    <section>
-      <div style="margin-top:50px;">
-	<img class="rawimg" src="assets/architecture1.svg"/>
-      </div>
-    </section>
-    <section>
-      <div style="margin-top:50px;">
-	<img class="rawimg" src="assets/architecture2.svg"/>
-      </div>
-    </section>
-    
-    <section>
-      <div style="float:right;text-align:center;margin-top:0px;">
-      	<h3><span class="alert">T</span>ODO<br />Technical <span class="alert">Challenges</span></h3>
-      </div>
-      <ul class="condensed">
-	<li>ORCID integration</li>
-	<li>Dora synchronization / paper tracking</li>
-	<li>Versioning</li>
-	<li>ERIC/i <-> ERIC/o autosync</li>
-	<li>Statistics (Make Data Count)</li>
-	<li>S3 storage backend</li>
-	<li>bulk download</li>
-	<li>refactoring, deployment polish, towards turnkey solution</li>
-	<li> ... </li>
-	<li><b>RDM Control</b></li>
-      </ul>
-    </section>
-    
-    <section>
-      <div style="float:right;text-align:center;margin-top:-80px;">
-      	<h3><span class="alert">Cultural</span>/Challenges</h3>
-      </div>
-      <div>
-	<ul style="margin-top:30px;">
-	  <li><b>Adoption</b>: Mixed experiences</li>
-	  <ul style="margin-bottom:30px;">
-	    <li>Young researchers are more enthusiastic than established ones</li>
-	    <li>Open Data is a major motivator</li>
-	    <li>Work to <span class="alert">prepare</span> data is underestimated</li>
-	  </ul>
-	  <li><b>Curation</b>: <span class="alert">Large</span> & unsolved</li>
-	  <li><span class="alert">Know-how</span> dissemination about data preparation</li>
-	  <li>Appointment of <span class="alert">Data Managers</span></li>
+	<p>Software</p>
+	<ul class="condensed">
+	  <li>VirtualBox (Oracle, free)</li>
+	  <li>VMware Workstation Player/Pro</li>
 	</ul>
-      </div>
-     </section>
-
-    <section>
-      <div style="float:right;text-align:center;margin-top:-20px;">
-      	<h3><span class="alert">Support</span>/Activities</h3>
-      </div>
-      <div>
-	<ul style="margin-top:30px;">
-	  <li><b>Guidance <span class="alert">m</span>aterial / documentation</b></li>
-	  <ul style="margin-bottom:30px;">
-	    <li><a href="https://opendata.eawag.ch/dmp/contents.html">DMP Guide</a></li>
-	    <li><a href="https://doi.org/10.25678/000066">Eawag publication & archiving guide</li>
-	    <li><a href="https://doi.org/10.25678/0001GB">Data Package Review Checklist</a></li>
-	  </ul>
-	  <li><b><span class="alert">W</span>orkshops</b></li>
-	  <ul style="margin-bottom:30px;">
-	    <li><span class="alert">D</span>MP workshops</li>
-	    <li><span class="alert">Git</span> workshops</li>
-            <li><span class="alert">Tactical</span> Tech workshop (Ipython, VMs, Docker, programming basics / tools, useful software, ...)</li>
-	  </ul>
+	<p>Drawbacks</p>
+	<ul class="condensed">
+	  <li>Needs ressources just like a <span class="alert">separate Computer</span></li>
+	  <li>Need <span class="alert">comple setup</span> of an OS from scratch</li>
 	</ul>
       </div>
     </section>
-    
-   <section>
-      <div style="float:right;text-align:center;margin-top:-20px;">
-      	<h3><span class="alert">Support</span>/Activities</h3>
-      </div>
-      <div>
-      	<ul style="margin-top:30px;">
-      	  <li><b>Individual <span class="alert">S</span>upport (core RDM), e.g.</b></li>
-      	  <ul style="margin-bottom:30px;">
-      	    <li>Large volume <span class="alert">data transfer</span> (we no have sftp!)</li>
-      	    <li>Field <span class="alert">collection</span> (Kobotools, Excel-Advice)</li>
-      	    <li>Laptop <span class="alert">encryption</span></li>
-      	    <li> Data organization for projects</li>
-      	  </ul>
-      	  <li><b><span class="alert">Extended</span> Support</b> (-> "scientific programming"), e.g.</li>
-      	  <ul style="margin-bottom:30px;">
-      	    <li>Web-<span class="alert">App</span> development / deployment (VM, SWITCH)</li>
-      	    <li><span class="alert">SIS</span> - Liaison (contracting)</li>
-      	  </ul>
-	  <li><b><span class="alert">IT admin</span> work</b>,
-	  e.g. storage</span> administration and planning.</li>
-     	</ul>
-      </div>
-     </section>
 
-   <section>
-      <div style="float:right;text-align:center;margin-top:-150px;">
-      	<h3><span class="alert">O</span>pportunities</h3>
+    <section> <!-- Containers -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-20px;">
+    	<h3><span class="alert">C</span>ontainers</h3>
       </div>
-      <div>
-      	<ul style="margin-top:30px;">
-      	  <li><b><span class="alert">C</span>ollaborations
-      	  / <span class="alert">s</span>ynergies</b> with other
-      	  intitutions / groups</li>
-      	  <ul style="margin-bottom:30px;">
-      	    <li>Repository: <span class="alert">WSL</span> / <b>EnviDat</b></li>
-      	    <li>WSL: Workshops / Lectures / possibly OpenBIS in the future</li>
-      	    <li>Documentation / Guides: potentially with <span class="alert">everybody</span></li>
-      	  </ul>
-      	  <li><b>Idea</b>: RDM <span class="alert">initiatives</span>
-      	    of various ETH Domain entities should formalise
-      	    their <span class="alert">cooperation</span>.</li>
-     	</ul>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-0px;">
+	<img width="1000" src="assets/containers-security-virtual-machines.png" class="rawimg" />
       </div>
-     </section>
+    </section>
 
+    <section> <!-- Containers -->
+      <div style="float:right;width:50%;text-align:center;margin-top:-50px;">
+    	<h3><span class="alert">C</span>ontainers</h3>
+      </div>
+      <p style="clear:both;">&nbsp;</p>
+      <div style="margin-top:-30px;text-align:left;">
+	<p>Difference to VM</p>
+	<ul>
+	  <li><span class="alert">Lots of containers</span> on one machine possible</li>
+	  <li><span class="alert">Fast</span> start and stop</li>
+	</ul>
+	<p><b>Usage</b></p>
+	<ol>
+	  <li><span class="alert">Try out</span> complex software <span style="font-size:smaller">(e.g. Taiga)</span></li>
+	  <li><span class="alert">Develop</span> software with <span class="alert">"big" dependencies</span>, e.g. databases</li>
+	  <li>Have the <span class="alert">setup in code</span> (as Dockerfile)</li>
+	  <li><span class="alert">Deploy</span> exactly the same environment to <b>any</b> host</li>
+	</ol>
+      </div>
+    </section>
+  </section>
 
+   <section data-state="pollev"
+	    data-background-iframe="https://www.polleverywhere.com/multiple_choice_polls/hEXEGhgAi6gIaXraC5aR9?preview=true&controls=none"></section>
+  
     <section>
       <div class="full" style="background:white;">
 	<h1><span class="alert">Q</span>uestions?</h1>
