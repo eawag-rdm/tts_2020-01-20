@@ -123,7 +123,7 @@
 	<p><b>Python<span class="alert">2</span> versus Python<span class="alert">3</span></b></p>
         <ul>
 	  <li><b>Incompatible!</b>
-	  <li> ... but lots of help to port from 2 to 3</li>
+	  <li> ... but lots of <a href="http://python3porting.com/toc.html">help</a> to <a href="https://docs.python.org/3/howto/pyporting.html">port</a> from 2 to 3</li>
 	  <li>Use <mark>Python 3</mark> unless you need legacy packages</li>
 	</ul>
       </div>
@@ -131,8 +131,8 @@
 	<p><b>Python <span class="alert">encapsulation</span></b></p>
 	<ul>
 	  <li>Always work in virtual environments!</li>
-	  <li>Use <b><mark>virtualenv</mark></b> + <b>pip</b>, or</li>
-	  <li><b><mark>conda</mark></b></li>
+	  <li>Use <b><mark><a href="https://virtualenv.pypa.io/en/stable/userguide/">virtualenv</a></mark></b> + <b>pip</b>, or</li>
+	  <li><b><mark><a href="https://conda.io/en/latest/">conda</a></mark></b></li>
 	</ul>
       </div>
 
@@ -147,9 +147,9 @@
       <div>
 	<h4>Python <span class="alert">packages</span> you need to <span class="alert">learn</span></h4>
 	<dl>
-	  <dt>numpy</dt><dd>Fundamental package for scientific computing: matrices (arrays), linear algebra</dd>
-	  <dt>pandas</dt><dd>Fundametal package for data analysis: <i>Data Frame</i> (similar to R) and <i>Time Series</i>. Data sorting & preparing.</dd>
-	  <dt>plotnine</dt><dd>Recommended for visualization. A clone of R's <i>ggplot2</i>. Traditional alternative: <i>Matplotlib</i>/<i>Seaborn</i>.</dd>
+	  <dt><a href="https://numpy.org/">numpy</a></dt><dd>Fundamental package for scientific computing: matrices (arrays), linear algebra</dd>
+	  <dt><a href="https://pandas.pydata.org/docs/index.html">pandas</a></dt><dd>Fundametal package for data analysis: <i>Data Frame</i> (similar to R) and <i>Time Series</i>. Data sorting & preparing.</dd>
+	  <dt><a href="https://plotnine.readthedocs.io/en/stable/">plotnine</a></dt><dd>Recommended for visualization. A clone of R's <i>ggplot2</i>. Traditional alternative: <i>Matplotlib</i>/<i>Seaborn</i>.</dd>
 	</dl>
       </div>
     </section>
@@ -163,10 +163,13 @@
 	<h4>Python <span class="alert">packages</span> for ML / AI</h4>
 	<p>Python is "<mark>industry-standard</mark>" when it comes to ANN, CNN, RNN, GAN, ..., "<mark>deep-</mark>anything".</p>
 	<dl>
-	  <dt>scikit-learn</dt><dd>Classical statistics &amp; ML: regression, classification, clustering, decision-trees, validation, SVM, EOF, ...</dd>
-	  <dt>Caffe</dt><dd>Fast CNN framework by Berkeley AI Research Lab.</dd>
-	  <dt>PyTorch</dt><dd>Deep Learning Framework by <span class="alert">Facebook</span></dd>
-	  <dt>Keras + TensorFlow</dt><dd>Deep learning high-level interface by <span class="alert">Google</span>.</dd>
+	  <dt><a href="https://scikit-learn.org/stable/">scikit-learn</a></dt><dd>Classical statistics &amp; ML: regression, classification, clustering, decision-trees, validation, SVM, EOF, ...</dd>
+	  <dt><a href="https://caffe.berkeleyvision.org/">Caffe</a></dt><dd>Fast CNN framework by Berkeley AI Research Lab.</dd>
+	  <dt><a href="https://pytorch.org/">PyTorch</a></dt><dd>Deep Learning Framework by <span class="alert">Facebook</span></dd>
+	  <dt><a href="https://keras.io/">Keras</a>
+	  + <a href="https://www.tensorflow.org/">TensorFlow</a></dt><dd>Deep
+	  learning high-level interface
+	  by <span class="alert">Google</span>.</dd>
 	</dl>
       </div>
     </section>
@@ -185,10 +188,10 @@
       <div style="margin-top:-20px;">
 	<h4>Python <span class="alert">IDE<span style="font-size:smaller;">s</span></h4><br />
       <ul>
-	<li>Spyder</li>
-	<li>PyCharm</li>
-	<li>VSCodium</li>
-	<li>JupyterLab (Demo), <a href="https://colab.research.google.com/github/theevann/amld-pytorch-workshop/blob/master/5-CNN.ipynb">Colab</a></li>
+	<li><a href="https://www.spyder-ide.org/">Spyder</a></li>
+	<li><a href="https://www.jetbrains.com/de-de/pycharm/">PyCharm</a></li>
+	<li><a href="https://vscodium.com/">VSCodium</a></li>
+	<li><a href="https://jupyter.org/">JupyterLab</a> (Demo), <a href="https://colab.research.google.com/github/theevann/amld-pytorch-workshop/blob/master/5-CNN.ipynb">Colab</a></li>
       </ul>
       </div>
     </section>
@@ -212,14 +215,14 @@
       </div>
       <div class="leftcolumn" style="margin-top:-40px;">
 	<h4>R <span class="alert">packages</span> you need to <span class="alert">learn</span></h4>
-	<p><b>The Tidyverse</b></p>
+	<p><b><a href="https://www.tidyverse.org/">The Tidyverse</a></b></p>
 	<ul style="margin-left:-180px">
 	  <li>dplyr,</li>
 	  <li>ridyr,</li>
 	  <li>tibble,</li>
 	  <li>ggplot2, ... </li>
 	</ul>
-	<p style="clear:left;">Modern packages for "<mark>Data Science</mark>" (Hadley Wickham)</p>
+	<p style="clear:left;">Modern packages for "<mark>Data Science</mark>" (Hadley Wickham). Check out <a href="https://r4ds.had.co.nz/">the free book</a>.</p>
       </div>
     </section>
 
@@ -235,10 +238,10 @@
 	<dt>Find R packages</dt><dd>CRAN <mark>Task Views</mark> : <a href="https://cran.r-project.org/web/views">https://cran.r-project.org/web/views</a></dd>
 	<dt>The R IDE</dt><dd><a href="https://rstudio.com/products/rstudio/download/#download">RStudio Desktop</a></dd>
 	<dt>Web-based interactive
-	  visualizations</dt><dd><mark>Shiny</mark>. Example: <a href="https://shiny.rstudio.com/gallery/explore-panel-data.html">ExPanD</a>. Also
+	  visualizations</dt><dd><mark><a href="https://shiny.rstudio.com/">Shiny</a></mark>. Example: <a href="https://shiny.rstudio.com/gallery/explore-panel-data.html">ExPanD</a>. Also
 	  a cloud service.</dd>
-	<dt>knitr</dt><dd>Dynamic report generation, literate programming</dd>
-	<dt>checkpoint</dt><dd>A snapshot of all package versions (<i>h/t Andreas</i>)
+	<dt><a href="https://yihui.org/knitr/">knitr</a></dt><dd>Dynamic report generation, literate programming</dd>
+	<dt><a href="https://cran.r-project.org/web/packages/checkpoint/index.html">checkpoint</a></dt><dd>A snapshot of all package versions (<i>h/t Andreas</i>)
 	  <pre><code>library(checkpoint)
 	      checkpoint("2015-01-15")</code></pre></dd>
       </dl>
@@ -264,7 +267,7 @@
 	<ol start="0">
 	  <li>A script without structure.</li>
 	  <li>Code is for <span class="alert">humans</span>: Comment and <span class="alert">structure</span> into sections!</li>
-	  <li>DRY, generalize: Write <span class="alert">functions</span>!</li>
+	  <li><a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>, generalize: Write <span class="alert">functions</span>!</li>
 	  <li>Make code re-usable: Write a <span class="alert">library</span>!</li>
 	  <li>Get rid of hard-coded parameters: Make scripts take arguments -> <a href="http://docopt.org/">docopt</a></li>
 	  <li>Read a book: <a href="https://imagery.pragprog.com/products/595/tpp20.jpg?1557173963">The Pragmatic Programmer</a></li> 
@@ -286,10 +289,16 @@
       <p style="clear:both;">&nbsp;</p>
       <div>
 	<h4>Learn Git!</h4><br />
-	<ul>
-	  <li>Looks intimidating at first</li>
-	  <li>Once you know the important parts, it becomes easy.</li>
+	<ul class="condensed">
+	  <li>Looks <a href="https://git-scm.com/docs">intimidating</a> at first.</li>
+	  <li>Once you know
+	  the <a href="https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html">important
+	  parts</a>, it becomes easy.</li>
 	  <li>There will be courses.</li>
+	  <li>There
+	  are <a href="https://www.datacamp.com/courses/introduction-to-git-for-data-science">good
+	  online courses</a>
+	    and <a href="https://juristr.com/blog/2013/04/git-explained/">tutorials</a> &amp; <a href="https://git-scm.com/book/en/v2">The Book</a></li>
 	  <li>Put your stuff on <a href="https://github.com/eawag-rdm">GitHub</a> 
 	    (<a href="https://gitlab.switch.ch">gitlab.switch.ch</a>,
 	    <a href="https://framagit.org">framagit.org</a>, <a href="https://bitbucket.org">bitbucket.org</a>, ...)</li>
@@ -359,12 +368,16 @@
       <p style="clear:both;">&nbsp;</p>
       <div>
 	<ul>
-	  <li>Extremly <span class="alert">simple</span> markup-language</li>
-	  <li>Human <span class="alert">readable</span> (unlike html, xml)</li>
-	  <li>Can do everything you need in a scientific article</li>
+	  <li>Extremly <a href="https://daringfireball.net/projects/markdown/"><span class="alert">simple</span> markup-language</a></li>
+	  <li><a href="https://www.markdownguide.org/basic-syntax/">Human <span class="alert">readable</span></a> (unlike html, xml)</li>
+	  <li>Can
+	  do <a href="https://libscie.github.io/rmarkdown-workshop/handout.html">everything
+	  you need</a> in
+	  a <a href="https://doi.org/10.2139/ssrn.3175518">scientific
+	  article</a></li>
 	  <li>Has become <span class="alert">ubiquitous</span><br />
 	  (wikis, commenting systems, GitHub-README,
-	  webpage-generators, <a href="https://www.authorea.com/product">authorea.com</a>...</li>
+	    <a href="https://jekyllrb.com/">webpage-generators</a>, <a href="https://www.authorea.com/product">authorea.com</a>...</li>
 	  <li>Can be rendered to <i><b>html</b></i>, <i><b>pdf</b></i>, <i>epub</i>, <i>LaTeX</i>, even <i>docx</i> and <i>odt</i>, ....</li>
 	  <li>Can be <span class="alert">mixed</span> with plain LaTeX or html</li>
 	</ul>
@@ -549,28 +562,36 @@
     </section>
 
     <section> <!-- Excel & csv -->
-      <div style="float:right;width:50%;text-align:center;margin-top:-60px;">
+      <div style="float:right;width:50%;text-align:center;margin-top:-30px;">
     	<h3><span class="alert">Tabular</span> data</h3>
       </div>
       <p style="clear:both;">&nbsp;</p>
       <div style="margin-top:-0px">
 	<h4><span class="alert">Avoid Excel</span> files <span style="font-size:smaller;">(like the plague)</span></h4>
 	<ul class="condensed">
-	  <li>Numerous bugs in statistical functions<br />=> A <mark>no-go for analysis</mark>.</li>
+	  <li>Numerous <a href="https://doi.org/10.1016/j.csda.2008.03.005">bugs</a>, <a href="https://doi.org/10.1016/j.csda.2008.03.004">bugs</a>
+	    & <a href="https://doi.org/10.1007/s00180-014-0482-5">bugs</a> in statistical functions<br />=> A <mark>no-go for
+	  analysis</mark>.</li>
 	  <li>Mixing of <span class="alert">data</span>
 	  storage, <span class="alert">display</span>
 	  &amp; <span class="alert">programming</span><br />=>
 	    guarantees <mark>non-reproducibility</mark>.</li>
-	  <li>Not a proper file-format standard<br />=> <mark>non-portability</mark> (even across MS-Office versions)</li>
-	  <li>Bugs in the calendar. Never use "cell-format" = "Date"!</li>
-	  <li>Auto-correction accidents: <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7">Ziemann et al.</a></li>
+	  <li>Not a proper file-format standard
+	  (rather <span class="alert"><a href="https://en.wikipedia.org/wiki/Office_Open_XML">three</a></span>)<br />=> <mark>non-portability</mark>
+	  (even across MS-Office versions)</li>
+	  <li><a href="http://blogs.perl.org/users/ovid/2013/10/fighting-20-year-old-software-bugs.html">Bugs
+	  in <a href="https://docs.microsoft.com/en-us/office/troubleshoot/excel/1900-and-1904-date-system">the
+	  calendar</a></a>. Never use "cell-format" = "Date"!</li>
+	  <li>Auto-correction
+	  accidents <a href="https://genomebiology.biomedcentral.com/track/pdf/10.1186/s13059-016-1044-7">corrupted
+	  20% of supplementary Excel gene lists</a>.</li>
 	  <li><a href="http://www.eusprig.org">European Spreadsheet Risks Interest Group</a></li>
 	</ul>
      </div>
     </section>
 
     <section> <!-- Excel & csv -->
-      <div style="float:right;width:50%;text-align:center;margin-top:-70px;">
+      <div style="float:right;width:50%;text-align:center;margin-top:-80px;">
     	<h3><span class="alert">Tabular</span> data</h3>
       </div>
       <p style="clear:both;">&nbsp;</p>
@@ -584,6 +605,9 @@
 	  <li>For <span class="alert">typing</span> data into a table</li>
 	  <li>For <span class="alert">looking</span> at a data table</li>
 	  <li>For <span class="alert">disciplined</span> usage</li>
+	  <li>If you
+	  <a href="https://theconversation.com/the-reinhart-rogoff-error-or-how-not-to-excel-at-economics-13646">know
+	  what you<br /> are doing</a></li>
 	</ul>
 	</div>
       </div>
@@ -595,7 +619,7 @@
     </section>
 
     <section> <!-- csv & serialization -->
-      <div style="float:right;width:50%;text-align:center;margin-top:-180px;">
+      <div style="float:right;width:50%;text-align:center;margin-top:-120px;">
     	<h3><span class="alert">Tabular</span> data</h3>
       </div>
       <p style="clear:both;">&nbsp;</p>
@@ -603,6 +627,9 @@
 	<ul>
 	  <li>Use simple tab- or comma-separated files</li>
 	  <li>Make sure they are UTF-8 encoded, if they contain special characters</li>
+	  <li>To export a spreadsheet to csv,
+	  use <a href="https://www.libreoffice.org/download/download/">LibreOffice</a>
+	    (because Excel ... <a href="https://stackoverflow.com/search?q=excel+as+csv">you know</a>)</li>
 	  <li>Use open formats provided by your analysis language<br />(  R: <i>save()</i>, Python: <i>pickle.dump()</i>  )</li>
 	</ul>
       </div>
@@ -617,16 +644,22 @@
 	<p>
 	  When you spend a lot of time in your analysis code to
 	</p>
-	<b><span class="alert">load</span> the right <span class="alert">files</span> &amp <span class="alert">extract</span> the right <span class="alert">data</span></b>
+	<b><span class="alert">load</span> the
+	right <span class="alert">files</span>
+	&amp <span class="alert">extract</span> the
+	right <span class="alert">data</span></b>
 	<p>maybe you need a database.</p>
 	<dl>
 	  <dt>MS-Access</dt><dd>Good for <mark>one local user</mark>
 	    (with write permissions). Nice GUI for table-design &amp;
 	    query-forms. Good for <mark>interactive</mark> use.</dd>
-	  <dt>SQLite</dt><dd>Good for <mark>one local user</mark>
-	    (with write permissions). <mark><b>Integrated</b></mark>
-	    into RSQLite (R) and sqlite3
-	    (Python). Good for <mark>programmatic</mark> use</dd>
+	  <dt><a href="https://www.sqlite.org/index.html">SQLite</a></dt><dd>Good
+	    for <mark>one local user</mark> (with write
+	    permissions). <mark><b>Integrated</b></mark>
+	    into <a href="https://cran.r-project.org/web/packages/RSQLite/index.html">RSQLite</a>
+	    (R)
+	    and <a href="https://docs.python.org/3.8/library/sqlite3.html">sqlite3</a>
+	    (Python). Good for <mark>programmatic</mark> use.</dd>
 	  <dt>RDBMS</dt><dd><mark>Multi-user</mark>, server-based. E.g. PostgreSQL, MariaDB, MS SQL Server</dd>
 	</dl>
       </div>
@@ -666,7 +699,7 @@
 	<p>Drawbacks</p>
 	<ul class="condensed">
 	  <li>Needs ressources just like a <span class="alert">separate Computer</span></li>
-	  <li>Need <span class="alert">comple setup</span> of an OS from scratch</li>
+	  <li>Need <span class="alert">complete setup</span> of an OS from scratch</li>
 	</ul>
       </div>
     </section>
@@ -694,7 +727,8 @@
 	</ul>
 	<p><b>Usage</b></p>
 	<ol>
-	  <li><span class="alert">Try out</span> complex software <span style="font-size:smaller">(e.g. Taiga)</span></li>
+	  <li><span class="alert">Try out</span> complex
+	  software <span style="font-size:smaller">(<a href="https://github.com/docker-taiga/taiga">e.g. Taiga</a>)</span></li>
 	  <li><span class="alert">Develop</span> software with <span class="alert">"big" dependencies</span>, e.g. databases</li>
 	  <li>Have the <span class="alert">setup in code</span> (as Dockerfile)</li>
 	  <li><span class="alert">Deploy</span> exactly the same environment to <b>any</b> host</li>
